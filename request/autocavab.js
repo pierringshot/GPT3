@@ -1,6 +1,7 @@
 //autocavab.js
 //api key stored in ../.api-keys/autocavab.api 
 const Groq = require('groq-sdk');
+var userMessage = ''
 
 const groq = new Groq();
 async function main() {
@@ -56,7 +57,7 @@ async function main() {
       },
       {
         "role": "user",
-        "content": "(TEXT STRING FROM SCRIPT ARGUMENT LIKE 'node autocavab.js <salam bu bir user texti variablesidir>')"
+        "content": '"'+userMessage+'"'
       }
     ],
     "model": "llama-3.1-70b-versatile",
