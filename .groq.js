@@ -1,5 +1,3 @@
-// autocavab.js
-// API key stored in ../.api-keys/autocavab.api 
 const Groq = require('groq-sdk');
 const fs = require('fs');
 
